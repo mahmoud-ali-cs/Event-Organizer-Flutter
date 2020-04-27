@@ -1,4 +1,5 @@
 import 'package:eventorganizerflutter/constants.dart';
+import 'package:eventorganizerflutter/elements/date_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -39,33 +40,7 @@ class EventCard extends StatelessWidget {
                       flex: 8,
                       child: Align(
                         alignment: Alignment.center,
-                        child: AspectRatio(
-                          aspectRatio: 1 / 2,
-                          child: Card(
-                            elevation: 0,
-                            color: Color(0xFFaae1f7),
-                            margin: EdgeInsets.symmetric(
-//                                                horizontal: 17.0,
-                              vertical: 16,
-                            ),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15.0),
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Text(
-                                  'Oct',
-                                  style: kCategoriesTextStyle.copyWith(
-                                      color: Colors.white),
-                                ),
-                                Text('13',
-                                    style: kCategoriesTextStyle.copyWith(
-                                        color: Colors.black54)),
-                              ],
-                            ),
-                          ),
-                        ),
+                        child: DateCard(),
                       ),
                     ),
                     Expanded(

@@ -7,6 +7,7 @@ import 'package:eventorganizerflutter/elements/category.dart';
 import 'package:eventorganizerflutter/elements/event_card.dart';
 import 'package:eventorganizerflutter/screens/event_page.dart';
 import 'package:eventorganizerflutter/screens/home_page.dart';
+import 'package:eventorganizerflutter/screens/search_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(fontFamily: 'Montserrat'),
       home: Scaffold(
-        body: HomePage(),
+        body: SearchPage(),
       ),
     );
   }
